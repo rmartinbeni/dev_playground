@@ -1,7 +1,7 @@
 const canvas = document.getElementById('myCanvas')
 const ctx = canvas.getContext('2d')
 const img = new Image()
-const vida = '<img style="width:20px" src="/img/vida.png" alt="life">'
+const vida = '<img style="width:20px" src="img/vida.png" alt="life">'
 const p1vidas = []
 const p2vidas = [];
 

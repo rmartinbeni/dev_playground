@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Retro 2 player pong game">
+    <title>┃ THE ● PONG ┃</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body style="background-color: black">
+    <div class="container-fluid">
+        <header id="header" class="clearfix">
+            <div class="col align-self-center" style="text-align: center;margin-top: 2.5%;">
+                <h1 class="custom-font header">
+                    <img src="/img/palmera.png" alt="retro_palmtree" height="100">
+                    THE PONG
+                    <img src="/img/palmera.png" alt="retro_palmtree" height="100">
+                </h1>
+            </div>
+        </header>
+        <!-- /header -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row" style="margin-top: 2.5%">
+                    <div class="col-sm-1 offset-sm-5">
+                        <p class="custom-font">P1</p>
+                    </div>
+                    <div class="col-sm-1" align="right">
+                        <p class="custom-font">P2</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="puntosDerecha" class="col-sm-6" align="right"></div>
+                    <div id="puntosIzquierda" class="col-sm-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12" style="margin-top: 1%">
+                        <canvas id="myCanvas" width="720" height="480"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+    </div>
+    <script src="/js/script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

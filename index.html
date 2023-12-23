@@ -1,71 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title> ┃ THE ● PONG ┃ </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <style>
-    canvas {
-        background: #eee;
-        display: block;
-        margin: 0 auto;
-    }
-
-    @font-face {
-        font-family: "Arcade Classic";
-        src: url('fonts/ARCADE_I.TTF') format("truetype");
-    }
-
-    .custom-font {
-        font-family: "Arcade Classic", Verdana, Tahoma;
-        color: white;
-    }
-
-    .header {
-        font-size: 100px;
-        background: -webkit-linear-gradient(white, #F00);
-        background: -o-linear-gradient(white, #F00);
-        background: -moz-linear-gradient(white, #F00);
-        background: linear-gradient(white, #F00);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .btn-circle {
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        text-align: center;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-        padding: 6px 0;
-        font-size: 12px;
-        line-height: 1.42;
-        border-radius: 50px;
-    }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Retro 2 player pong game">
+    <title>┃ THE ● PONG ┃</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body style="background-color: black">
     <div class="container-fluid">
         <header id="header" class="clearfix">
-            <div class="col align-self-center" style="text-align: center;margin-top: 5%;">
+            <div class="col align-self-center" style="text-align: center;margin-top: 2.5%;">
                 <h1 class="custom-font header">
-                    <img src="img/palmera.png" height="100">
+                    <img src="/img/palmera.png" alt="retro_palmtree" height="100">
                     THE PONG
-                    <img src="img/palmera.png" height="100">
+                    <img src="/img/palmera.png" alt="retro_palmtree" height="100">
                 </h1>
             </div>
         </header>
         <!-- /header -->
         <div class="row">
             <div class="col-sm-12">
-                <div class="row" style="color: white;margin-top: 5%">
+                <div class="row" style="margin-top: 2.5%">
                     <div class="col-sm-1 offset-sm-5">
-                        <p class="custom-font" style="font-size: 20px">P1</p>
+                        <p class="custom-font">P1</p>
                     </div>
                     <div class="col-sm-1" align="right">
-                        <p class="custom-font" style="font-size: 20px">P2</p>
+                        <p class="custom-font">P2</p>
                     </div>
                 </div>
                 <div class="row">
@@ -74,8 +39,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12" style="margin-top: 1%">
-                        <canvas id="myCanvas" style="background: url(img/CampoPong.png) center no-repeat; border: white 1px solid; background-size: 100%;" width="720" height="480">
-                        </canvas>
+                        <canvas id="myCanvas" width="720" height="480"></canvas>
                     </div>
                 </div>
             </div>
@@ -83,7 +47,7 @@
             </div>
         </div>
     </div>
-    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/script.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>
